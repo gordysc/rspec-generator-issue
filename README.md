@@ -20,3 +20,10 @@ ALTER ROLE example WITH Superuser;
 # Leave the shell
 \q
 ```
+
+## Reproduce Bug
+
+```sh
+# Note: This works on rspec-rails 5.1.2
+rails g model user email password_digest
+```
